@@ -34,14 +34,13 @@ function averageLengthString ($path, array$file){
 
 
 
-$path1 = 'D:\a-level_homework\lesson_4\level_1_2\Test_open.txt';
-$path2 = 'D:\a-level_homework\lesson_4\level_1_2\Test_wr.txt';
+$path1 = 'Test_open.txt';
+$path2 = 'Test_wr.txt';
+$path3 = 'Test_wr2wr.txt';
+
 $fileSource = fileRead($path1);
 fileWrite($path2 , $fileSource);
 
-$path3 = 'D:\a-level_homework\lesson_4\level_1_2\Test_wr2wr.txt';
-$path4 = 'D:\a-level_homework\lesson_4\level_1_2\Test_wr.txt';
-
-$read = fileRead($path4);
+$read = fileRead($path2);
 averageLengthString($path3, $read);
 ?>
