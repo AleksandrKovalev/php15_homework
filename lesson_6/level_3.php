@@ -3,7 +3,7 @@ $start = microtime(true);
 define("LIMIT",100);
 define("SQRT_LIMIT",floor(sqrt(LIMIT)));
  
-function classic(){
+function sieveEratosthenes(){
     $sieve = array_fill(2,LIMIT-1,true);
     for($i=2;$i<=SQRT_LIMIT;$i++){
         if($sieve[$i]===true){
@@ -19,6 +19,6 @@ function classic(){
         }    
     }
    
-    classic();
+    sieveEratosthenes();
     echo 'Время выполнения скрипта: '.round(microtime(true) - $start, 4).' сек.';
 ?>
