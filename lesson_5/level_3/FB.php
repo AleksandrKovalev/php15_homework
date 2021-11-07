@@ -23,11 +23,10 @@ function fizzBuzz($fb_source)
 }
 
 
-$file = file('D:\a-level_homework\lesson_5\level_3\fizzBuzz.txt');
+$file = file('fizzBuzz.txt');
 $arr = array_map('makeVarArr', $file);
-
- $results = array_map('fizzBuzz', $arr);
+$results = array_map('fizzBuzz', $arr);
  //var_dump($arr);
- array_map('var_dump', $results);
+array_map('var_dump', $results);
 
 ?>
