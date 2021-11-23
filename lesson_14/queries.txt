@@ -1,0 +1,27 @@
+ 1) CREATE TABLE persons (
+    -> id int not null auto_increment primary key,
+    -> name varchar(100) not null default 'user_name',
+    -> pwd varchar(100) not null default 'password',
+    -> email varchar(100) not null default 'email',
+    -> gender varchar(100) not null default 'it'
+    -> );
+
+
+INSERT INTO persons VALUES (1,'Vasya','21341234qwefsdf','mmm@mmail.com','m'),
+			   (2,'Alex','21341234','mmm@mail.com','m'),
+                           (3,'Alexey','qq21341234Q','alexey@gmail.com','m'),
+                           (4,'Helen','MarryMeeee','hell@gmail.com','f'),
+                           (5,'Jenny','SmakeMyB','eachup@gmail.com','f'),
+                           (6,'Lora','burn23','tpiks@gmail.com','f');
+
+
+ 2) select concat ('This is ' , name, 
+	       if (gender = 'm', 'he has email ' , 'she has email'), email) 
+                as info from persons;
+
+3) select concat ('We have ' , count(gender), if(gender = 'm', ' boys!' , ' girls!')) 
+		  as 'Gender info' from persons group by gender;
+
+4) Using ready-made operations from a task.
+
+5) select title, count(word) as words from dicts d left join words w on d.id = w.dict_id group by title;
