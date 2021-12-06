@@ -19,7 +19,7 @@ class Car extends Transport{
 	}
 	specific(){
 		console.log(`This car have max speed is:${this.maxSpeed}, 
-					weight is: ${this.weight} and ${this.color} color`);
+			     weight is: ${this.weight} and ${this.color} color`);
 	}
 }
 
@@ -30,7 +30,7 @@ class Motorbike extends Transport{
 	}
 	specific(){
 		console.log(`This motorbike have max speed is:${this.maxSpeed}, 
-					weight is: ${this.weight} and ${this.color} color`);
+			     weight is: ${this.weight} and ${this.color} color`);
 	}
 }
 
@@ -41,7 +41,7 @@ class Bicycle extends Transport{
 	}
 	specific(){
 		console.log(`This bicycle have max speed is:${this.maxSpeed}, 
-			weight is: ${this.weight} and ${this.color} color`);
+			    weight is: ${this.weight} and ${this.color} color`);
 	}
 }
 
